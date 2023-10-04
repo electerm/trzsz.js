@@ -1,23 +1,19 @@
 {
-  "name": "trzsz",
-  "version": "1.1.1",
+  "name": "@electerm/trzsz",
+  "version": "1.1.4",
   "description": "Making webshell and terminal supports trzsz ( trz / tsz ), which similar to ( rz / sz ), and compatible with tmux.",
   "main": "lib/trzsz.js",
   "types": "lib/trzsz.d.ts",
   "module": "lib/trzsz.mjs",
   "files": [
-    "lib",
-    "bin"
+    "lib"
   ],
-  "bin": {
-    "trz": "./bin/trz.js",
-    "tsz": "./bin/tsz.js"
-  },
   "scripts": {
     "test": "jest",
     "build": "rimraf dist lib && tsc && rollup -c",
     "watch": "rollup -c -w",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "pub": "npm publish --access public"
   },
   "repository": {
     "type": "git",
